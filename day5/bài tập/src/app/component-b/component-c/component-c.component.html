@@ -1,0 +1,33 @@
+<div class="containerC">
+  <!-- {{listEmployees|json}} -->
+  <div class="table1">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let val of listEmployees">
+        <td *ngIf="val.id != 0 && val.id != null">{{val.id }}</td>
+        <td *ngIf="val.id != 0 && val.id != null">{{val.name}}</td>
+        <td *ngIf="val.id != 0 && val.id != null">{{val.phone}}</td>
+        <td *ngIf="val.id != 0 && val.id != null" ><Button class="delete" (click)="deleteItem(val)" >Delete</Button></td>
+      </tr>
+    </table>
+  </div>
+  <div class="table2">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+      </tr>
+      <tr *ngFor="let val of listEmployees2">
+        <td *ngIf="val.id != 0">{{val.id }}</td>
+        <td *ngIf="val.id != 0">{{val.name}}</td>
+        <td *ngIf="val.id != 0">{{val.phone}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

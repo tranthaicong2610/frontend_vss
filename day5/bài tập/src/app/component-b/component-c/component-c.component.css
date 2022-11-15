@@ -1,0 +1,48 @@
+
+/* .conponnetA h1{
+  margin: 10px;
+} */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 330px;
+  margin: 10px;
+}
+
+  td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+  th{
+    background-color: gray;
+  }
+
+  tr:nth-child(even) {
+  background-color: pink;
+}
+.containerC{
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  width: auto;
+  height: auto;
+  background-color: rgb(64, 83, 64);
+
+}
+.delete{
+  background-color: brown;
+  padding: 5px;
+  border-radius: 5px;
+}
+.delete:hover{
+  background-color: rgb(243, 11, 11);
+}
+/* .componnentB .containerC{
+  margin: 10px;
+  padding: 20px;
+  width: auto;
+  height: 250px;
+  background-color: rgb(64, 83, 64);
+
+} */

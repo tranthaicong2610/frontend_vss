@@ -1,0 +1,23 @@
+<div class="conponnetA">
+  <div class="table">
+      <h1>Table Employee</h1>
+      <table>
+          <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Birthday</th>
+              <th>Phone</th>
+              <th>Address</th>
+          </tr>
+          <tr *ngFor="let val of employees" (click)="onClick(val)">
+              <td>{{val.id}}</td>
+              <td>{{val.name}}</td>
+              <td>{{val.birthday}}</td>
+              <td>{{val.phone}}</td>
+              <td>{{val.address}}</td>
+          </tr>
+      </table>
+  </div>
+
+  <app-component-b [data]="data"></app-component-b>
+</div>

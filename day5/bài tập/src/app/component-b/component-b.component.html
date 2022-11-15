@@ -1,0 +1,18 @@
+<div class="componnentB">
+  <!-- {{data|json}} -->
+  <div class="form">Form <br>
+    <hr><br>
+    <label for="">ID : </label> <input type="text" [disabled]="true" [(ngModel)]="data.id" value = "{{data.id == 0  ? '' : data.id}}" readonly>
+    <br><br>
+    <label for="">Name : </label> <input type="text" [(ngModel)]="data.name" value="{{data.id == 0 ? '' : data.name}}">
+    <br><br>
+    <label for="">BirthDay : </label> <input type="text" [(ngModel)]="data.birthday" value="{{data.id == 0 ? '' : data.birthday}}">
+    <br><br>
+    <label for="">Phone : </label> <input type="text" [(ngModel)]="data.phone" value="{{data.id == 0 ? '' : data.phone}}">
+    <br> <br>
+    <label for="">Address : </label> <input type="text" [(ngModel)]="data.address" value="{{data.id == 0 ? '' : data.address}}">
+    <br><br>
+    <!-- <button (click)="editData(data)" class="editEmployee">Edit Employee</button> -->
+  </div>
+  <app-component-c [data]="data" ></app-component-c>
+</div>
